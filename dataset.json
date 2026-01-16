@@ -1,0 +1,43 @@
+[
+  {
+    "sentence": "She loves to drink [MASK] in the morning.",
+    "candidates": ["coffee", "cofee", "coffi"],
+    "label": "coffee"
+  },
+  {
+    "sentence": "He is going to the [MASK] for higher studies.",
+    "candidates": ["college", "collage", "colage"],
+    "label": "college"
+  },
+  {
+    "sentence": "Please close the [MASK] before leaving.",
+    "candidates": ["door", "doar", "dor"],
+    "label": "door"
+  },
+  {
+    "sentence": "I forgot my [MASK] at home.",
+    "candidates": ["wallet", "walet", "vallet"],
+    "label": "wallet"
+  },
+  {
+    "sentence": "She bought a new [MASK] yesterday.",
+    "candidates": ["phone", "fone", "phoen"],
+    "label": "phone"
+  },
+
+  {
+    "sentence": "나는 매일 아침 [MASK]를 마신다.",
+    "candidates": ["커피", "코피", "커피이"],
+    "label": "커피"
+  },
+  {
+    "sentence": "그는 학교에 [MASK] 갔다.",
+    "candidates": ["갔다", "같다", "갓다"],
+    "label": "갔다"
+  },
+  {
+    "sentence": "오늘 날씨가 정말 [MASK].",
+    "candidates": ["좋다", "조타", "좃다"],
+    "label": "좋다"
+  }
+]
