@@ -47,7 +47,9 @@ Each data sample contains:
   "label": "coffee"
 }
 
-Why LoRA is useful here
+---
+---
+## Why LoRA is useful here
 
 For Contextual Spell Correction, LoRA helps because:
 
@@ -102,3 +104,18 @@ Right:  I went to the market
 
 
 LoRA learns contextual usage, not spelling only.
+---
+---
+## Overfitting means:
+
+A model learns the training data too well, including its noise and mistakes, and therefore fails to perform well on new, unseen data.
+
+Simple real-life example
+
+Imagine you memorize answers instead of understanding concepts.
+
+Same questions → you score well ✅
+
+New questions → you fail ❌
+
+👉 That is overfitting.
