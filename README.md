@@ -47,3 +47,58 @@ Each data sample contains:
   "label": "coffee"
 }
 
+Why LoRA is useful here
+
+For Contextual Spell Correction, LoRA helps because:
+
+1️⃣ Efficient fine-tuning
+
+Only 0.5% – 2% parameters are trained
+
+Fits easily on Google Colab
+
+👉 Useful when correcting words based on context, not memorization
+
+2️⃣ Prevents overfitting
+
+Spell-correction datasets are usually small
+
+LoRA avoids changing core language knowledge
+
+The model retains grammar + semantics
+
+👉 This is critical for contextual understanding
+
+3️⃣ Faster training
+
+Training time reduced drastically
+
+Multiple experiments possible
+
+👉 Useful for academic projects & deadlines
+
+4️⃣ Language-agnostic
+
+Same LoRA idea works for:
+
+English
+
+Korean
+
+Multilingual models
+
+👉 Perfect for your EN + KO dataset
+
+5️⃣ Better generalization
+
+Model learns error-correction patterns
+
+Not just dictionary replacements
+
+Example:
+
+Wrong:  I went too the market
+Right:  I went to the market
+
+
+LoRA learns contextual usage, not spelling only.
