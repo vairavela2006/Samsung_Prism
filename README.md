@@ -48,40 +48,44 @@ Each data sample contains:
 }
 
 ---
+
 ---
-## Why LoRA is useful here
 
-For Contextual Spell Correction, LoRA helps because:
+## Why LoRA is Useful
 
-1️⃣ Efficient fine-tuning
+For Contextual Spell Correction, LoRA (Low-Rank Adaptation) is used to efficiently fine-tune a large language model without updating all its parameters.
 
-Only 0.5% – 2% parameters are trained
+1. Efficient Fine-Tuning
 
-Fits easily on Google Colab
+Only 0.5% – 2% of the model parameters are trained
 
-👉 Useful when correcting words based on context, not memorization
+Requires less GPU memory
 
-2️⃣ Prevents overfitting
+Easily runs on Google Colab
 
-Spell-correction datasets are usually small
+This helps the model focus on context-based correction rather than memorizing spelling rules.
 
-LoRA avoids changing core language knowledge
+2. Prevents Overfitting
 
-The model retains grammar + semantics
+Spell-correction datasets are generally small
 
-👉 This is critical for contextual understanding
+LoRA freezes the core language model weights
 
-3️⃣ Faster training
+Preserves grammar and semantic knowledge
 
-Training time reduced drastically
+This is important for accurate contextual understanding.
 
-Multiple experiments possible
+3. Faster Training
 
-👉 Useful for academic projects & deadlines
+Significantly reduces training time
 
-4️⃣ Language-agnostic
+Enables multiple experiments in a short time
 
-Same LoRA idea works for:
+This is ideal for academic projects and deadlines.
+
+4. Language-Agnostic
+
+The same LoRA technique works for:
 
 English
 
@@ -89,33 +93,34 @@ Korean
 
 Multilingual models
 
-👉 Perfect for your EN + KO dataset
+This makes LoRA suitable for English + Korean (EN + KO) datasets.
 
-5️⃣ Better generalization
+5. Better Generalization
 
-Model learns error-correction patterns
+Learns error-correction patterns
 
-Not just dictionary replacements
+Does not depend only on dictionary replacements
 
 Example:
 
-Wrong:  I went too the market
-Right:  I went to the market
+Wrong : I went too the market
+Right : I went to the market
 
 
-LoRA learns contextual usage, not spelling only.
----
----
-## Overfitting means:
+LoRA helps the model understand contextual word usage, not just spelling.
 
-A model learns the training data too well, including its noise and mistakes, and therefore fails to perform well on new, unseen data.
+## Overfitting
 
-Simple real-life example
+What is Overfitting?
 
-Imagine you memorize answers instead of understanding concepts.
+Overfitting occurs when a model learns the training data too well, including its noise and mistakes, and performs poorly on new, unseen data.
 
-Same questions → you score well ✅
+Simple Real-Life Example
 
-New questions → you fail ❌
+If you memorize answers instead of understanding concepts:
 
-👉 That is overfitting.
+Same questions → high score ✅
+
+New questions → low score ❌
+
+This situation is called overfitting.
